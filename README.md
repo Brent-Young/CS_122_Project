@@ -2,7 +2,6 @@
 
 ## Authors
 - Brent Young ([Brent-Young](https://github.com/Brent-Young))
-- *Partner's name* ([partner-username])
 
 ## Project Description
 This project is a Python application that analyzes historical stock market
@@ -23,13 +22,13 @@ research accessible through simple visual summaries.
 - Output shown as Matplotlib charts and printed summary tables
 - Stretch goal: Streamlit web dashboard version
 
-### Data Collection and Storage Plan (Author #1: [name])
+### Data Collection and Storage Plan
 - Dataset: S&P 500 stock data from Kaggle (daily open/high/low/close/volume)
 - Clean raw CSVs with pandas (missing values, date parsing)
 - Load cleaned data into an SQLite database indexed by ticker and date
 - Include a loading script so the database can be rebuilt reproducibly
 
-### Data Analysis and Visualization Plan (Author #2: [name])
+### Data Analysis and Visualization Plan
 - Compute daily returns, cumulative returns, and rolling volatility with pandas/NumPy
 - Calculate 20/50-day moving averages for selected stocks
 - Compute correlations between stocks
