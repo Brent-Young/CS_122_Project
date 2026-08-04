@@ -9,8 +9,8 @@ data from the S&P 500 Kaggle dataset. Users can select one or more stocks
 through a menu-driven interface and generate statistics and visualizations
 for their selections. The application computes metrics such as daily and
 cumulative returns, volatility, and moving averages, and compares
-performance across multiple stocks. All data is stored locally in an SQLite
-database for fast, repeatable queries. The goal is to make basic investment
+performance across multiple stocks. All data is loaded from a local CSV file
+into a pandas DataFrame for fast, repeatable queries. The goal is to make basic investment
 research accessible through simple visual summaries.
 
 ## Project Outline/Plan
@@ -24,9 +24,8 @@ research accessible through simple visual summaries.
 
 ### Data Collection and Storage Plan
 - Dataset: S&P 500 stock data from Kaggle (daily open/high/low/close/volume)
-- Clean raw CSVs with pandas (missing values, date parsing)
-- Load cleaned data into an SQLite database indexed by ticker and date
-- Include a loading script so the database can be rebuilt reproducibly
+- Clean raw CSV with pandas (drop missing values, parse dates, sort by ticker and date)
+- Data loaded directly into a pandas DataFrame for fast, repeatable queries
 
 ### Data Analysis and Visualization Plan
 - Compute daily returns, cumulative returns, and rolling volatility with pandas/NumPy
