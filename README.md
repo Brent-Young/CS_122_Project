@@ -16,11 +16,10 @@ research accessible through simple visual summaries.
 ## Project Outline/Plan
 
 ### Interface Plan
-- Menu-driven command-line interface
-- User selects stocks by ticker symbol and a date range
-- User chooses which analysis or chart to generate
-- Output shown as Matplotlib charts and printed summary tables
-- Stretch goal: Streamlit web dashboard version
+- Flask web interface served locally and embedded in a Jupyter notebook
+- User selects one or more stocks by ticker symbol from a dropdown list
+- User chooses which analysis or chart to generate via buttons
+- Output shown as Matplotlib charts and summary tables rendered in the browser
 
 ### Data Collection and Storage Plan
 - Dataset: S&P 500 stock data from Kaggle (daily open/high/low/close/volume)
